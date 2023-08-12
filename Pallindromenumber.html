@@ -1,0 +1,27 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Pallindrome Number</title>
+        </head>
+        <body>
+            <script type="text/javascript">   //121
+
+            var num= prompt("Enter the number");
+            var originalNumber= num;
+            var reverse= 0;
+            while(num>0){
+                reverse=(reverse*10) + (num%10);
+                
+                num= parseInt(num/10);
+        
+            }
+            if(originalNumber==reverse){
+                console.log(`${originalNumber} is a Palindrome number`);
+            }
+            else{
+                console.log(`${originalNumber} is not a Palindrome number`);
+            }
+           
+    </script>
+        </body>
+    </html>

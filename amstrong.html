@@ -1,0 +1,28 @@
+<!-- program to Swap the case of each character of a string, 
+    upper case to lower and vice versa  //153//371-->
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Amstrong Number</title>  
+        </head>
+        <body>                 
+            <script type="text/javascript">
+                var num= prompt("Enter the number");
+                var temp=num;
+                var sum=0;
+                var numOfDigits= num.toString().length;
+                while(temp>0){
+                    var digit= temp%10;
+                    sum+=digit** numOfDigits;
+                    temp= parseInt(temp/10);
+                }
+                if(sum==num){
+                    console.log(`${num} is an Amstrong Number`)
+                } else {
+                    console.log(`${num} is not an Amstrong Number`)
+                }
+          
+          
+                      </script>
+                    </body>
+                 </html>

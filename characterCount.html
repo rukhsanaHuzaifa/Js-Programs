@@ -1,0 +1,28 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>Print Repeated elements in an Array</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        var string = "abaaadccabzzzzzzzzzx";
+        var array = string.split("");
+        var count;
+
+        for (var i = 0; i < string.length; i++) {
+          count = 1;
+
+          for (var j = i + 1; j < string.length; j++) {
+            if (array[i] == array[j]) {
+              count++;
+              array[j] = "0";
+            }
+          }
+          if (count >= 1 && array[i] != "0") {
+            console.log(`${array[i]}- ${count} times`);
+          }
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>

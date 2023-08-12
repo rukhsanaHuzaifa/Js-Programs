@@ -1,0 +1,19 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>Remove Duplicate elements</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        const a = [2, 1, 3, 3, 6, 8, 8, 8, 9, 3, 5];
+        var b = [];
+        for (var i = 0; i < a.length; i++) {
+          if (!b.includes(a[i])) {
+            b.push(a[i]);
+          }
+        }
+        console.log(`"unique elements contains in b are:", ${b}`);
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>

@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program which accept a number as 
+input and insert dashes (-) between each two even numbers.-->
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Print - between even numbers</title>
+        </head>
+        <body>
+            <script type="text/javascript">
+          var num = prompt("enter a num")
+          
+             var result = [num[0]];
+
+          for (var i = 1; i < num.length; i++) {
+              if (num[i - 1] % 2 === 0 && num[i] % 2 === 0) {
+                result.push('-', num[i]);
+               
+                    } else {
+                result.push(num[i]);
+                        }
+                     }
+                    console.log(result.join(''));
+                      </script>
+                    </body>
+                 </html>
+
