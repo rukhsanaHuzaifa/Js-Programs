@@ -1,0 +1,21 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>missing numner in an array</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        var a = [1, 2, 4, 5, 10],
+          count = 10;
+        var missing = [];
+
+        for (var i = 1; i <= count; i++) {
+          if (a.indexOf(i) == -1) {
+            missing.push(i);
+          }
+        }
+        console.log(missing);
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>

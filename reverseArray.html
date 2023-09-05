@@ -1,0 +1,32 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title>reverse words in an array</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        function reverseArray(array) {
+          for (var i = 0; i < array.length; i++) {
+            array[i] = reverseWord(array[i]);
+          }
+          function reverseWord(str) {
+            var revStr = "";
+            for (var i = str.length - 1; i >= 0; i--) {
+              revStr += str[i];
+            }
+            return revStr;
+          }
+          for (var i = 0; i <= Math.floor(array.length / 2); i++) {
+            var temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
+          }
+          return array;
+        }
+        const myArray = ["my", "name", "is", "Rukhsana"];
+        const finalArray = reverseArray(myArray);
+        console.log(finalArray);
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>

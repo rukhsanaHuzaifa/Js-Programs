@@ -1,27 +1,23 @@
-
 <DOCTYPE! html>
-    <html>
-        <head>
-            <title>find second smallest number in an array</title>
-        </head>
-        <body>
-            <script type="text/javascript">
-         
-          var a= [2, 9, -1, 8, 6];
-          var min= a[0];
-          var secMin= a[0];
-          for(var i=0; i<a.length; i++){
-            if(a[i]<min){
-                secMin=min;
-                min=a[i];
-                
-            } else if(a[i]<secMin){
-                  secMin=a[i];
-                  
-            }
-
-            }
-          console.log(`second smallest num in the array is ${secMin}`)
-                      </script>
-                    </body>
-                 </html>
+  <html>
+    <head>
+      <title>find second smallest number in an array</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        var a = [2, 9, -1, 8, 6];
+        var min = a[0];
+        var secMin = a[0];
+        for (var i = 0; i < a.length; i++) {
+          if (a[i] < min) {
+            secMin = min;
+            min = a[i];
+          } else if (a[i] < secMin) {
+            secMin = a[i];
+          }
+        }
+        console.log(`second smallest num in the array is ${secMin}`);
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>
